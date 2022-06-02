@@ -1,0 +1,395 @@
+/*
+=======================================
+            shadow area
+=======================================
+*/
+.animation-popup-menu-shadow-area-unhide {
+  animation-name: shadow-area-unhide;
+  animation-duration: 430ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shadow-area-unhide {
+  0% {
+      width: 0;
+      height: 100vh;
+  }  
+  100% {
+      width: 100%;
+      height: 100vh;
+  }
+}
+
+@-moz-keyframes shadow-area-unhide {
+  0% {
+      width: 0;
+      height: 100vh;
+  }  
+  100% {
+      width: 100%;
+      height: 100vh;
+  }
+}
+
+@-webkit-keyframes shadow-area-unhide {
+  0% {
+      width: 0;
+      height: 100vh;
+  }  
+  100% {
+      width: 100%;
+      height: 100vh;
+  }
+}
+
+.animation-popup-menu-shadow-area-hide {
+  animation-name: shadow-area-hide;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shadow-area-hide {
+  0% {
+      width: 100%;
+      height: 100vh;
+  }
+  100% {
+      width: 0;
+      height: 100vh;
+  }
+}
+
+@-moz-keyframes shadow-area-hide {
+  0% {
+      width: 100%;
+      height: 100vh;
+  }
+  100% {
+      width: 0;
+      height: 100vh;
+  }
+}
+
+@-webkit-keyframes shadow-area-hide {
+  0% {
+      width: 100%;
+      height: 100vh;
+  }
+  100% {
+      width: 0;
+      height: 100vh;
+  }
+}
+/*
+=======================================
+       rotation burger menu grid
+=======================================
+*/
+.animation-burger-menu-rotation-open {
+  animation-name: rotation-open;
+  animation-duration: 550ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation-open {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(90deg);
+  }    
+}
+
+@-moz-keyframes rotation-open {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(90deg);
+  }    
+}
+
+@-webkit-keyframes rotation-open {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(90deg);
+  }    
+}
+
+.animation-burger-menu-rotation-closed {
+  animation-name: rotation-closed;
+  animation-duration: 550ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotation-closed {
+  0% {
+      transform: rotate(90deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }    
+}
+
+@-moz-keyframes rotation-closed {
+  0% {
+      transform: rotate(90deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }    
+}
+
+@-webkit-keyframes rotation-closed {
+  0% {
+      transform: rotate(90deg);
+  }
+  100% {
+      transform: rotate(0deg);
+  }    
+}
+/*
+=========================================
+            popup menu list
+=========================================
+*/
+.animation-popup-menu-list-open {
+  animation-name: list-open;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes list-open {
+  0% {
+    width: 0;
+    border: solid 1px black;
+  }
+  100% {
+    width: 320px;
+    border: dotted 2px #979899;
+    overflow-x: auto;
+  }
+}
+
+@-moz-keyframes list-open {
+  0% {
+    width: 0;
+    border: solid 1px black;
+  }
+  100% {
+    width: 320px;
+    border: dotted 2px #979899;
+    overflow-x: auto;
+  }
+}
+
+@-webkit-keyframes list-open {
+  0% {
+    width: 0;
+    border: solid 1px black;
+  }
+  100% {
+    width: 320px;
+    border: dotted 2px #979899;
+    overflow-x: auto;
+  }
+}
+
+.animation-popup-menu-list-closed {
+  animation-name: list-closed;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes list-closed {
+  0% {
+    width: 320px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@-moz-keyframes list-closed {
+  0% {
+    width: 320px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@-webkit-keyframes list-closed {
+  0% {
+    width: 320px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+/*
+=========================================
+            popup menu list font-size
+=========================================
+*/
+.animation-popup-list-item-heading-increase-font-size {
+  animation-name: increase-font-size;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes increase-font-size {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 24px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes increase-font-size {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 24px;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes increase-font-size {
+  0% {
+    font-size: 0;
+    opacity: 0;
+  }
+  100% {
+    font-size: 24px;
+    opacity: 0;
+  }
+}
+
+.animation-popup-list-item-heading-decrease-font-size {
+  animation-name: decrease-font-size;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes decrease-font-size {
+  0% {
+    font-size: 24px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 0;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes decrease-font-size {
+  0% {
+    font-size: 24px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes decrease-font-size {
+  0% {
+    font-size: 24px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 0;
+    opacity: 0;
+  }
+}
+
+/*
+=========================================
+      burger-menu-popup-list-item-link
+=========================================
+*/
+.animation-popup-menu-list-unhide-text {
+  animation-name: unhide-text;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes unhide-text {
+  0% {
+    font-size: 24px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 24px;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes unhide-text {
+  0% {
+    font-size: 24px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 24px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes unhide-text {
+  0% {
+    font-size: 24px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 24px;
+    opacity: 1;
+  }
+}
+
+.animation-popup-menu-list-hide-text {
+  animation-name: hide-text;
+  animation-duration: 500ms;
+}
+
+@keyframes hide-text {
+  0% {
+    font-size: 24px;
+    color: #979899;
+  }
+  100% {
+    font-size: 24px;
+    color: #97989900;
+  }
+}
+
+@-moz-keyframes hide-text {
+  0% {
+    font-size: 24px;
+    color: #979899;
+  }
+  100% {
+    font-size: 24px;
+    color: #97989900;
+  }
+}
+
+@-webkit-keyframes hide-text {
+  0% {
+    font-size: 24px;
+    color: #979899;
+  }
+  100% {
+    font-size: 24px;
+    color: #97989900;
+  }
+}

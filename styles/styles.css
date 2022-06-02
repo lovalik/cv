@@ -1,0 +1,310 @@
+@import url("./font-face.css");
+@import url("./responsive.css");
+@import url("./animation.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Ubuntu", "Ubuntu-Bold", "Tahoma", "Arial", sans-serif;
+  color: #979899;
+  background-color: #2e2c2c;
+}
+
+.burger-menu-blur-wrapper-blur-elem {
+  /* outline: solid 1px red; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  /* outline: solid 2px yellow; */
+}
+
+.hide {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #E0A809;
+}
+
+.link {
+  text-decoration: none;
+  color: #E0A809;
+  transition: color 200ms linear;
+}
+
+.link:hover {
+  color: white;
+}
+
+.header,
+.main,
+.section,
+.section-footer {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  /* outline: solid 1px yellow; */
+}
+
+.section-contacts-left-part,
+.left-part,
+.right-part {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 
+================================
+            header
+================================
+*/
+.header-list {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.header-list-item-heading {
+  color: #979899;
+}
+
+.header-list-item-heading:hover {
+  color: white;
+  transition: color 200ms linear;
+}
+
+.header-list-item-heading:active {
+  transition: color 50ms linear;
+  color: #E0A809;
+}
+
+.avatar-wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.avatar {
+  height: 100%;
+}
+
+.section-contacts-name-surname-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  padding-bottom: 25px;
+  border-bottom: solid 1px #A4A5A6;
+}
+
+.section-contacts-name,
+.section-contacts-surname {
+  display: inline-block;
+  font-size: 72px;
+  /* outline: solid 1px yellow; */
+  vertical-align: bottom;
+
+}
+
+.section-contacts-name {
+  margin-bottom: 0;
+  color: #A4A5A6;
+}
+
+.section-contacts-surname {
+  font-family: "Ubuntu-Bold";
+  text-transform: uppercase;
+  color: #E0A809;
+}
+
+.address-list{
+  display: flex;
+  padding: 0;
+  list-style-type : none;
+}
+
+.address-list-item {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.address-list-item-heading {
+  font-weight: bold;
+}
+/* 
+================================
+            main
+================================
+*/
+main {
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-part-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-example-of-work-all-links-wrapper {
+  display: flex;
+}
+
+.section-education-right-part,
+.section-work-experience-right-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-secondary-school,
+.education-university,
+.education-university-bsufc,
+.section-work-experience-krasny-borets,
+.section-work-experience-sports-school,
+.section-work-experience-construction,
+.section-work-experience-trolleybus-depot,
+.section-work-experience-mogilev-bus-depot,
+.section-work-experience-minsk-bus-depot {
+  display: flex;
+}
+
+.education-secondary-school-left-part,
+.education-university-left-part,
+.education-university-bsufc-left-part,
+.section-work-experience-krasny-borets-left-part,
+.section-work-experience-sports-school-left-part,
+.section-work-experience-construction-left-part,
+.section-work-experience-trolleybus-depot-left-part,
+.section-work-experience-mogilev-bus-depot-left-part,
+.section-work-experience-minsk-bus-depot-left-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hobby-right-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hobby-before-2013,
+.section-hobby-after-2013 {
+  display: flex;
+  justify-content: center;
+  /* outline: solid 1px red; */
+}
+
+/* 
+================================
+            footer
+================================
+*/
+.footer-right-part {
+  display: flex;
+}
+
+.footer-copyright-information,
+.footer-my-github, 
+.footer-educational-resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 15px;
+  /* outline: solid 1px red; */
+}
+
+.footer-copyright-information-text-wrapper {
+  position: relative;
+  width: 75%;
+  /* outline: solid 1px red; */
+}
+
+.footer-copyright-information-text-logo {
+  opacity: 0;
+}
+
+.footer-copyright-information-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  opacity: 1;
+}
+
+.logo-github-link {
+  display: flex;
+  align-items: center;
+  height: auto;
+  /* outline: solid 1px red; */
+}
+
+.logo-rsschool-link {
+  display: flex;
+  align-items: center;
+  width: 75%;
+  background-color: #e0a809;
+  /* outline: solid 1px red; */
+}
+
+.logo-github-link:hover,
+.logo-rsschool-link:hover {
+  color: white;
+  transform: scale(1.1, 1.1);
+  transition: transform 200ms;
+}
+
+.logo-github,
+.logo-rsschool {
+  max-width: 100%;
+  height: auto;
+  /* outline: solid 1px red; */
+}
+
+.logo-github {
+  box-sizing: border-box;
+}
+/*
+=============================
+        scrollbar
+=============================
+*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #ababab;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #ababab;
+}
