@@ -775,11 +775,11 @@
     border-bottom: solid 4px #E0A809;
   }
 
-  /* .burger-menu:hover {
+  .burger-menu:hover {
     border-top: solid 4px white;
     border-bottom: solid 4px white;
     cursor: pointer;
-  } */
+  }
 
   .burger-menu-blur-wrapper-blur-elem {
     position: relative;
@@ -808,9 +808,9 @@
     border-top: solid 4px #E0A809;
   }
 
-  /* .burger-menu:hover > .burger-menu-middle-line {
+  .burger-menu:hover > .burger-menu-middle-line {
     border-top: solid 4px white;
-  } */
+  }
 
   .burger-menu-popup {
     position: absolute;

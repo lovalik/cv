@@ -4,6 +4,7 @@ function ui() {
   const burgerMenuLinksCollection = container.querySelectorAll('.burger-menu-popup-list-item-link');
   const burgerMenuWrapper = container.querySelector('.burger-menu_wrapper');
   const burgerMenuGrid = burgerMenuWrapper.querySelector('.burger-menu');
+  const burgerMenuGridMiddleLine = burgerMenuGrid.querySelector('.burger-menu-middle-line');
   const popupMenu = burgerMenuWrapper.querySelector('.burger-menu-popup');
   const popupMenuList = burgerMenuWrapper.querySelector('.burger-menu-popup-list');
   const listItemHeadingCollection = burgerMenuWrapper.querySelectorAll('.burger-menu-popup-list-item-heading');
@@ -27,12 +28,14 @@ function ui() {
     });
   }
 
-  function hideBurgerWhenCyhangeSize() {
+  function hideBurgerWhenChangeSize() {
     if (window.innerWidth >= 768 && !popupMenu.classList.contains('hide')) {
       popupMenu.classList.remove('animation-popup-menu-shadow-area-unhide');
       popupMenu.classList.remove('animation-popup-menu-shadow-area-hide');
       burgerMenuGrid.classList.remove('animation-burger-menu-rotation-open');
       burgerMenuGrid.classList.remove('animation-burger-menu-rotation-closed');
+      burgerMenuGridMiddleLine.remove('animation-burger-menu-middle-line-open');
+      burgerMenuGridMiddleLine.remove('animation-burger-menu-middle-line-closed');
       popupMenuList.classList.remove('animation-popup-menu-list-open');
       popupMenuList.classList.remove('animation-popup-menu-list-closed');
 
@@ -51,7 +54,7 @@ function ui() {
   const resizeControl = new ResizeObserver((entries) => {
     for (const entry of entries) {
       if (entry.contentBoxSize) {
-        hideBurgerWhenCyhangeSize();
+        hideBurgerWhenChangeSize();
       }
     }
   });
@@ -60,6 +63,7 @@ function ui() {
 
   function show() {
     burgerMenuGrid.classList.add('animation-burger-menu-rotation-open');
+    burgerMenuGridMiddleLine.classList.add('animation-burger-menu-middle-line-open');
     popupMenu.classList.add('animation-popup-menu-shadow-area-unhide');
     popupMenuList.classList.add('animation-popup-menu-list-open');
     for (const heading of listItemHeadingCollection) {
@@ -134,6 +138,8 @@ function ui() {
       popupMenu.classList.add('animation-popup-menu-shadow-area-hide');
       burgerMenuGrid.classList.remove('animation-burger-menu-rotation-open');
       burgerMenuGrid.classList.add('animation-burger-menu-rotation-closed');
+      burgerMenuGridMiddleLine.classList.remove('animation-burger-menu-middle-line-open');
+      burgerMenuGridMiddleLine.classList.add('animation-burger-menu-middle-line-closed');
       popupMenuList.classList.remove('animation-popup-menu-list-open');
       popupMenuList.classList.add('animation-popup-menu-list-closed');
     }
@@ -147,6 +153,7 @@ function ui() {
 
       popupMenu.classList.remove('animation-popup-menu-shadow-area-hide');
       burgerMenuGrid.classList.remove('animation-burger-menu-rotation-closed');
+      burgerMenuGridMiddleLine.classList.remove('animation-burger-menu-middle-line-closed');
       popupMenuList.classList.remove('animation-popup-menu-list-closed');
       for (const heading of listItemHeadingCollection) {
         heading.classList.remove('animation-popup-list-item-heading-decrease-font-size');

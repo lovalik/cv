@@ -93,29 +93,35 @@
 
 @keyframes rotation-open {
   0% {
-      transform: rotate(0deg);
+    border-color: white;
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(90deg);
-  }    
+    border-color: white;
+    transform: rotate(90deg);
+  }
 }
 
 @-moz-keyframes rotation-open {
   0% {
-      transform: rotate(0deg);
+    border-color: white;
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(90deg);
-  }    
+    border-color: white;
+    transform: rotate(90deg);
+  }
 }
 
 @-webkit-keyframes rotation-open {
   0% {
-      transform: rotate(0deg);
+    border-color: white;
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(90deg);
-  }    
+    border-color: white;
+    transform: rotate(90deg);
+  }
 }
 
 .animation-burger-menu-rotation-closed {
@@ -126,30 +132,108 @@
 
 @keyframes rotation-closed {
   0% {
-      transform: rotate(90deg);
+    border-color: white;
+    transform: rotate(90deg);
   }
   100% {
-      transform: rotate(0deg);
-  }    
+    border-color: #E0A809;
+    transform: rotate(0deg);
+  }
 }
 
 @-moz-keyframes rotation-closed {
   0% {
-      transform: rotate(90deg);
+    border-color: white;
+    transform: rotate(90deg);
   }
   100% {
-      transform: rotate(0deg);
-  }    
+    border-color: #E0A809;
+    transform: rotate(0deg);
+  }
 }
 
 @-webkit-keyframes rotation-closed {
   0% {
-      transform: rotate(90deg);
+    border-color: white;
+    transform: rotate(90deg);
   }
   100% {
-      transform: rotate(0deg);
-  }    
+    border-color: #E0A809;
+    transform: rotate(0deg);
+  }
 }
+
+/*
+=======================================
+       burger menu grid middle line
+=======================================
+*/
+.animation-burger-menu-middle-line-open {
+  animation-name: middle-line-open;
+  animation-duration: 550ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle-line-open {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@-moz-keyframes middle-line-open {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@-webkit-keyframes middle-line-open {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+.animation-burger-menu-middle-line-closed {
+  animation-name: middle-line-closed;
+  animation-duration: 550ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes middle-line-closed {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: #E0A809;
+  }
+}
+
+@-moz-keyframes middle-line-closed {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: #E0A809;
+  }
+}
+
+@-webkit-keyframes middle-line-closed {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: #E0A809;
+  }
+}
+
 /*
 =========================================
             popup menu list

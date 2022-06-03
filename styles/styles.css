@@ -138,6 +138,7 @@ h2 {
 
 .address-list{
   display: flex;
+  margin: 16px 0;
   padding: 0;
   list-style-type : none;
 }
