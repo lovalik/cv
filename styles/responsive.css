@@ -79,16 +79,6 @@
     margin: 0 0 0 15px;
   }
 
-  .avatar-wrapper {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-  }
-
-  .avatar {
-      border-radius: 150px;
-  }
-
   .right-part-text {
     row-gap: 16px;
     font-size: 18px;
@@ -353,16 +343,6 @@
     width: 55%;
   }
 
-  .avatar-wrapper {
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
-  }
-
-  .avatar {
-      border-radius: 150px;
-  }
-
   .section-contacts-surname {
     margin: 0;
   }
@@ -591,12 +571,6 @@
     width: 100%;
   }
 
-  .avatar {
-    max-width: 300px;
-    height: auto;
-    border-radius: 50%;
-  }
-
   .section-contacts-name-surname-wrapper {
     justify-content: center;
     flex-wrap: wrap;
@@ -801,11 +775,11 @@
     border-bottom: solid 4px #E0A809;
   }
 
-  .burger-menu:hover {
+  /* .burger-menu:hover {
     border-top: solid 4px white;
     border-bottom: solid 4px white;
     cursor: pointer;
-  }
+  } */
 
   .burger-menu-blur-wrapper-blur-elem {
     position: relative;
@@ -834,9 +808,9 @@
     border-top: solid 4px #E0A809;
   }
 
-  .burger-menu:hover > .burger-menu-middle-line {
+  /* .burger-menu:hover > .burger-menu-middle-line {
     border-top: solid 4px white;
-  }
+  } */
 
   .burger-menu-popup {
     position: absolute;
