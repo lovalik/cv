@@ -168,7 +168,8 @@
   }
   100% {
     width: 320px;
-    border: dotted 2px #979899;
+    border-right: dotted 2px #979899;
+    border-bottom: dotted 2px #979899;
     overflow-x: auto;
   }
 }

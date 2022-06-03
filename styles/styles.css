@@ -302,9 +302,9 @@ main {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: #ababab;
+  background: #e0a809;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background: #ababab;
+  background: #e0a809;
 }
