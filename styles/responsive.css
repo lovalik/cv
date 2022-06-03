@@ -529,10 +529,6 @@
     font-size: 18px;
   }
 
-  .burger-menu-popup-list-item-heading {
-    /* font-size: 0; */
-  }
-
   .section-contacts-left-part {
     width: 100%;
   }
@@ -577,9 +573,6 @@
   }
 
   .left-part {
-    /* background-color: #2B2C2C;
-    background-color: #292A2A;
-    background-color: #2D2E2E; */
     background-color: #2B2C2C;
   }
 
